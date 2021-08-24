@@ -6,3 +6,154 @@ body {
   color: #2c3e50;
   margin-top: 60px;
 }
+body{
+  background-color: #f1f3fb;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+body img{
+  height: 100px;
+    width: 160px;
+    display: block;
+}
+#myTable{
+  color: #000000;
+  overflow: scroll;
+}
+table {
+  border: 2px solid #5939F8;
+  border-collapse: collapse;
+}
+
+.toaster{
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 14px;
+  width: fit-content;
+    height: fit-content;
+}
+
+.show{
+  display: flex;
+}
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+ 
+.input_field{
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+    outline: 0; 
+		border-bottom-color: #6658d3;
+          
+}
+
+.input{
+  display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 15px;
+}
+.input_label {
+  color: #665856;
+}
+.action-button {
+	font: inherit;
+	font-size: 20px;
+	padding: 0.6em;
+	width: 80%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+  border: 0;
+  margin-bottom: 15px;
+  transition: filter 0.2s;
+}
+.action-button:hover{
+  cursor: pointer;
+  filter: brightness(0.9);
+  
+}
+.action-button:active{
+  filter: brightness(0.5);
+
+}
+  label{
+    color:  #6658d3;
+    position: absolute;
+    top: 0.4rem;
+  }
+th{
+  background-color: #5939F8;
+}
+
+Td{
+
+  border: 2px solid #5939F8;
+}
+
+#excluir{
+  border: none;
+  appearance: none;
+  background: #e00707;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 45px;
+    width: 45px;
+}

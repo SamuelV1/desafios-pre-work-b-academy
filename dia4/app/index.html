@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dia 4</title>
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia 4</title>
+</head>
+
+<body>
+  <span id='errorwindo' class="toaster">
+
+  </span>
+
+  <form id="formulario">
+    <div class="input">
+      <label>Placa</label>
+      <input class="input_field" type="text" id="placaVeiculo" required minlength="7" maxlength="7"
+        placeholder="placa Do veiculo Sem traços">
+    </div>
+
+    <div class="input">
+      <label>Brand</label>
+      <input class="input_field" type="text" id="Marca-Veiculo" required placeholder="marca Do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Ano Do Veiculo</label>
+      <input class="input_field" type="number" id="anoVeiculo" min="1900" max="9999" required placeholder="anoVeiculo">
+    </div>
+
+    <div class="input">
+      <label>Url Veiculo</label>
+      <input class="input_field" type="text" id="fotoVeiculo" required placeholder="ulr da foto do veiculo">
+    </div>
+
+    <div class="input">
+      <label>Cor </label>
+      <input type="color" id="CorVeiculo" placeholder="cor">
+    </div>
+
+
+
+    <input class='action-button' type="submit" value="Submit">
+  </form>
+
+  <table id="myTable" cellspacing="0" cellpadding="0">
+    <tr>
+      <Th id="foto">foto</Th>
+      <th id="marca">Marca</th>
+      <th id="anoVeiculo">Ano</th>
+      <th id="CorVeiculo">cor</th>
+      <th id="CorVeiculo">Placa</th>
+      <th id="ExcluirVeiculo">Excluir</th>
+    </tr>
+
+  </table>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

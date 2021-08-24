@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "vite": "^2.4.4"
-  }
+  },
+  "description": "Primeiro, instale as dependências do projeto e coloque o servidor para rodar em modo de desenvolvimento.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
